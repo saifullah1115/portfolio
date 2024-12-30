@@ -4,113 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saif Ullah - DevOps Engineer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>Saif Ullah</h1>
-            <p>Certified DevOps Engineer | AWS, Kubernetes, Docker, Terraform</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Saif Ullah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Hi, I'm Saif Ullah</h1>
+            <p class="lead">A Certified DevOps Engineer | AWS, Kubernetes, Docker, Terraform</p>
+            <a href="#contact" class="btn btn-light btn-lg">Get in Touch</a>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="py-5 bg-light">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a certified DevOps Engineer with expertise in AWS, Kubernetes, EKS, Docker, and Terraform. Specializing in deploying and managing production-critical applications with high availability and performance.</p>
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="profile-picture.jpg" alt="Saif Ullah" class="img-fluid rounded-circle mb-4" style="width: 200px; height: 200px;">
+                </div>
+                <div class="col-md-6">
+                    <p>I am a passionate and certified DevOps Engineer with expertise in AWS, Kubernetes, Docker, and Terraform. I specialize in automating cloud infrastructure, setting up CI/CD pipelines, and ensuring high availability for critical applications. My goal is to simplify and streamline the software deployment process for teams and organizations.</p>
+                    <p>I am always eager to learn new technologies and take on challenging projects that allow me to grow and enhance my skillset.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="py-5">
         <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Cloud Platforms: AWS, Azure, GCP</li>
-                <li>Containerization & Orchestration: Docker, Kubernetes</li>
-                <li>CI/CD Tools: Jenkins, GitLab, ArgoCD, Azure Pipelines</li>
-                <li>Infrastructure as Code: Terraform</li>
-                <li>Monitoring & Logging: ELK Stack, Prometheus, CloudWatch</li>
-                <li>Web Server Management: Nginx, Apache</li>
-                <li>Linux System Administration: Debian, Fedora, Arch</li>
-            </ul>
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-cloud-fill display-4 mb-3"></i>
+                    <h4>AWS & Cloud Platforms</h4>
+                    <p>AWS, Azure, GCP, Kubernetes, EKS, ECS</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-box display-4 mb-3"></i>
+                    <h4>Containerization</h4>
+                    <p>Docker, Kubernetes, Helm, EKS</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-code-slash display-4 mb-3"></i>
+                    <h4>CI/CD & DevOps Tools</h4>
+                    <p>Jenkins, GitLab, Terraform, Bitbucket</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2>Key Projects</h2>
-            <div class="project">
-                <h3>Infrastructure as Code for Kubernetes Cluster Deployment on AWS EKS</h3>
-                <p>Implemented Kubernetes clusters on AWS EKS using Terraform, enhancing scalability, security, and high availability for production workloads.</p>
-            </div>
-            <div class="project">
-                <h3>CI/CD Pipeline with Jenkins and Kubernetes</h3>
-                <p>Developed Jenkins pipelines for automated deployment of 100+ microservices on Kubernetes, reducing manual deployment time by 80%.</p>
+            <h2 class="text-center mb-4">Key Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Infrastructure Automation with Terraform</h5>
+                            <p class="card-text">Automated infrastructure provisioning and management using Terraform on AWS, reducing manual efforts and deployment time.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">CI/CD Pipeline Setup with Jenkins</h5>
+                            <p class="card-text">Implemented CI/CD pipelines using Jenkins for seamless application deployment and integration, resulting in a 50% reduction in manual errors.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="section">
+    <section id="certifications" class="py-5">
         <div class="container">
-            <h2>Certifications</h2>
-            <ul>
-                <li>AWS Cloud Practitioner (2023)</li>
-            </ul>
-            <img src="aws-certified-badge.png" alt="AWS Certified Badge">
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="section">
-        <div class="container">
-            <h2>Resume</h2>
-            <h3>Saif Ullah</h3>
-            <p>Email: saifullah335566@gmail.com</p>
-            <p>Phone: +92-3349102518</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/saifullah1115" target="_blank">saifullah1115</a></p>
-            <h3>Summary</h3>
-            <p>Certified DevOps Engineer with expertise in AWS, Kubernetes, EKS, Docker, and Terraform. Skilled in ELK Stack for real-time monitoring and centralized logging.</p>
-            <h3>Experience</h3>
-            <h4>DevOps Engineer | Arcana Info</h4>
-            <ul>
-                <li>Managed on-prem TKG Kubernetes clusters, ensuring 99.9% uptime.</li>
-                <li>Developed Jenkins pipelines to automate CI/CD workflows.</li>
-                <li>Deployed APIs using WSO2, handling over 1 million requests daily.</li>
-            </ul>
-            <h3>Education</h3>
-            <p>Bachelor's in Computer Science, HITEC University Taxila (2018 - 2022)</p>
+            <h2 class="text-center mb-4">Certifications</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center mb-4">
+                    <img src="aws-certified.png" alt="AWS Certified" class="img-fluid" style="max-width: 150px;">
+                    <p>AWS Certified Cloud Practitioner</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="py-5 bg-dark text-white">
         <div class="container">
-            <h2>Contact</h2>
-            <p>Email: saifullah335566@gmail.com</p>
-            <p>Phone: +92-3349102518</p>
+            <h2 class="text-center mb-4">Contact</h2>
+            <p class="text-center">Email: saifullah335566@gmail.com</p>
+            <p class="text-center">Phone: +92-3349102518</p>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Saif Ullah. All rights reserved.</p>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Saif Ullah. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
