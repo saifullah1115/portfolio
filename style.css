@@ -1,0 +1,104 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+header h1 {
+    font-size: 2.5rem;
+}
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 0;
+}
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    margin: 5px 0;
+}
+
+/* Project Styles */
+.project {
+    margin-bottom: 20px;
+}
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Certifications Section */
+#certifications img {
+    max-width: 150px;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .section h2 {
+        font-size: 1.8rem;
+    }
+}
