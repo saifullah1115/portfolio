@@ -5,48 +5,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saifullah | DevOps Engineer</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #333; color: #fff; padding: 20px 10%; text-align: center; }
-    section { padding: 20px 10%; }
-    h1, h2 { color: #333; }
-    .skills, .projects, .contact { margin-top: 20px; }
-    footer { background: #333; color: #fff; text-align: center; padding: 10px 0; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0d6efd;
+      color: #fff;
+      padding: 20px 10%;
+      text-align: center;
+    }
+    header img {
+      max-width: 150px;
+    }
+    header h1 {
+      margin-top: 10px;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0d6efd;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 40px 10%;
+    }
+    h2 {
+      color: #0d6efd;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .about {
+      text-align: center;
+    }
+    .skills, .projects, .certifications, .contact {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .skills ul, .projects ul, .certifications ul {
+      list-style: none;
+      padding: 0;
+    }
+    .skills ul li, .projects ul li, .certifications ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .skills ul li:last-child, .projects ul li:last-child, .certifications ul li:last-child {
+      border-bottom: none;
+    }
+    footer {
+      background: #0d6efd;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    .badge {
+      max-width: 100px;
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="https://d1.awsstatic.com/logos/aws-certified-cloud-practitioner.42d0673e8e4b13b148c488b146002e8c.png" alt="AWS Certified Badge" class="badge">
     <h1>Saifullah</h1>
     <p>DevOps Engineer | AWS Certified | Kubernetes Expert</p>
+    <p>5+ Years of Experience in Cloud and DevOps Technologies</p>
   </header>
-  <section>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
     <h2>About Me</h2>
-    <p>I am a DevOps engineer with expertise in cloud platforms, Kubernetes, Docker, and Terraform.</p>
+    <p>I am a seasoned DevOps engineer with expertise in cloud platforms, Kubernetes, Docker, and Infrastructure as Code tools like Terraform. My passion lies in automating deployments, optimizing workflows, and ensuring high availability for critical applications.</p>
   </section>
-  <section class="skills">
+
+  <section id="skills" class="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Cloud Platforms: AWS, Azure, GCP</li>
-      <li>Orchestration: Kubernetes, Docker</li>
-      <li>CI/CD: Jenkins, GitLab, Azure Pipelines</li>
-      <li>Monitoring: ELK Stack, Prometheus</li>
+      <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP</li>
+      <li><strong>CI/CD Tools:</strong> Jenkins, GitLab, Bitbucket, Azure Pipelines</li>
+      <li><strong>Containerization:</strong> Docker, Kubernetes, EKS, AKS, GKE</li>
+      <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation</li>
+      <li><strong>Monitoring & Logging:</strong> ELK Stack, Prometheus, CloudWatch</li>
+      <li><strong>Security:</strong> IAM, Security Groups, Secrets Management</li>
+      <li><strong>Other Tools:</strong> Nginx, Apache, Ansible, Helm, Grafana</li>
     </ul>
   </section>
-  <section class="projects">
+
+  <section id="projects" class="projects">
     <h2>Projects</h2>
     <ul>
-      <li>Deployed Kubernetes Cluster on EC2 using Kubeadm</li>
-      <li>Built Jenkins Pipelines for automated deployments</li>
-      <li>Set up secure Ingress with Contour and Envoy</li>
+      <li>Deployed a Kubernetes cluster using Kubeadm on AWS EC2 instances with secure Ingress and monitoring setup.</li>
+      <li>Built automated CI/CD pipelines in Jenkins for deploying microservices to Kubernetes clusters.</li>
+      <li>Implemented Terraform to automate infrastructure deployment on AWS and Azure.</li>
+      <li>Optimized log aggregation using ELK Stack for improved monitoring and debugging.</li>
+      <li>Configured Horizontal Pod Autoscaling (HPA) to ensure application scalability.</li>
     </ul>
   </section>
-  <section class="contact">
+
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Certified Cloud Practitioner</li>
+      <li>AWS Certified Solutions Architect – Associate</li>
+      <li>Microsoft Certified: Azure Fundamentals</li>
+      <li>Certified Kubernetes Administrator (CKA)</li>
+      <li>HashiCorp Certified: Terraform Associate</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: saifullah.devops@example.com</p>
+    <p>Email: <a href="mailto:saifullah.devops@example.com">saifullah.devops@example.com</a></p>
     <p>GitHub: <a href="https://github.com/saifullah" target="_blank">github.com/saifullah</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/saifullah" target="_blank">linkedin.com/in/saifullah</a></p>
   </section>
+
   <footer>
-    <p>&copy; 2024 Saifullah</p>
+    <p>&copy; 2024 Saifullah. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
