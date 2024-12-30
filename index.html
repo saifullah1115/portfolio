@@ -1,150 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saifullah | DevOps Engineer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #0d6efd;
-      color: #fff;
-      padding: 20px 10%;
-      text-align: center;
-    }
-    header img {
-      max-width: 150px;
-    }
-    header h1 {
-      margin-top: 10px;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    nav {
-      text-align: center;
-      margin: 20px 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #0d6efd;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    section {
-      padding: 40px 10%;
-    }
-    h2 {
-      color: #0d6efd;
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-    .about {
-      text-align: center;
-    }
-    .skills, .projects, .certifications, .contact {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .skills ul, .projects ul, .certifications ul {
-      list-style: none;
-      padding: 0;
-    }
-    .skills ul li, .projects ul li, .certifications ul li {
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
-    }
-    .skills ul li:last-child, .projects ul li:last-child, .certifications ul li:last-child {
-      border-bottom: none;
-    }
-    footer {
-      background: #0d6efd;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
-    }
-    .badge {
-      max-width: 100px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Ullah - DevOps Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <img src="https://d1.awsstatic.com/logos/aws-certified-cloud-practitioner.42d0673e8e4b13b148c488b146002e8c.png" alt="AWS Certified Badge" class="badge">
-    <h1>Saifullah</h1>
-    <p>DevOps Engineer | AWS Certified | Kubernetes Expert</p>
-    <p>5+ Years of Experience in Cloud and DevOps Technologies</p>
-  </header>
+    <header>
+        <div class="container">
+            <h1>Saif Ullah</h1>
+            <p>Certified DevOps Engineer | AWS, Kubernetes, Docker, Terraform</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a certified DevOps Engineer with expertise in AWS, Kubernetes, EKS, Docker, and Terraform for cloud infrastructure automation and CI/CD pipeline management. I specialize in deploying and managing production-critical applications with high availability and performance, using tools like ELK Stack, Jenkins, and GitLab.</p>
+        </div>
+    </section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I am a seasoned DevOps engineer with expertise in cloud platforms, Kubernetes, Docker, and Infrastructure as Code tools like Terraform. My passion lies in automating deployments, optimizing workflows, and ensuring high availability for critical applications.</p>
-  </section>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Cloud Platforms: AWS, Azure, GCP</li>
+                <li>Containerization & Orchestration: Docker, Kubernetes</li>
+                <li>CI/CD Tools: Jenkins, GitLab, ArgoCD, Azure Pipelines</li>
+                <li>Infrastructure as Code: Terraform</li>
+                <li>Monitoring & Logging: ELK Stack, Prometheus, CloudWatch</li>
+                <li>Web Server Management: Nginx, Apache</li>
+                <li>Linux System Administration: Debian, Fedora, Arch</li>
+            </ul>
+        </div>
+    </section>
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP</li>
-      <li><strong>CI/CD Tools:</strong> Jenkins, GitLab, Bitbucket, Azure Pipelines</li>
-      <li><strong>Containerization:</strong> Docker, Kubernetes, EKS, AKS, GKE</li>
-      <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation</li>
-      <li><strong>Monitoring & Logging:</strong> ELK Stack, Prometheus, CloudWatch</li>
-      <li><strong>Security:</strong> IAM, Security Groups, Secrets Management</li>
-      <li><strong>Other Tools:</strong> Nginx, Apache, Ansible, Helm, Grafana</li>
-    </ul>
-  </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Key Projects</h2>
+            <div class="project">
+                <h3>Infrastructure as Code for Kubernetes Cluster Deployment on AWS EKS</h3>
+                <p>Implemented Kubernetes clusters on AWS EKS using Terraform, enhancing scalability, security, and high availability for production workloads. Automated deployment for over 15 microservices, achieving 99.95% uptime.</p>
+            </div>
+            <div class="project">
+                <h3>CI/CD Pipeline with Jenkins and Kubernetes</h3>
+                <p>Developed Jenkins pipelines for automated deployment of 100+ microservices on Kubernetes, reducing manual deployment time by 80%. Integrated Docker and Kubernetes with Jenkins for seamless containerization and scalability.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Deployed a Kubernetes cluster using Kubeadm on AWS EC2 instances with secure Ingress and monitoring setup.</li>
-      <li>Built automated CI/CD pipelines in Jenkins for deploying microservices to Kubernetes clusters.</li>
-      <li>Implemented Terraform to automate infrastructure deployment on AWS and Azure.</li>
-      <li>Optimized log aggregation using ELK Stack for improved monitoring and debugging.</li>
-      <li>Configured Horizontal Pod Autoscaling (HPA) to ensure application scalability.</li>
-    </ul>
-  </section>
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Cloud Practitioner (2023)</li>
+            </ul>
+            <img src="aws-certified-badge.png" alt="AWS Certified Badge">
+        </div>
+    </section>
 
-  <section id="certifications" class="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Cloud Practitioner</li>
-      <li>AWS Certified Solutions Architect – Associate</li>
-      <li>Microsoft Certified: Azure Fundamentals</li>
-      <li>Certified Kubernetes Administrator (CKA)</li>
-      <li>HashiCorp Certified: Terraform Associate</li>
-    </ul>
-  </section>
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <h3>Saif Ullah</h3>
+            <p>Email: saifullah335566@gmail.com</p>
+            <p>Phone: +92-3349102518</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/saifullah1115">saifullah1115</a></p>
+            <h3>Summary</h3>
+            <p>Certified DevOps Engineer with expertise in AWS, Kubernetes, EKS, Docker, and Terraform for cloud infrastructure automation and CI/CD pipeline management. Skilled in ELK Stack (EFK) for real-time monitoring and centralized logging.</p>
+            <h3>Experience</h3>
+            <h4>DevOps Engineer | Arcana Info (April 2024 - Present)</h4>
+            <ul>
+                <li>Managed on-prem TKG Kubernetes clusters, ensuring 99.9% uptime.</li>
+                <li>Developed Jenkins pipelines to automate CI/CD workflows.</li>
+                <li>Deployed APIs using WSO2, handling over 1 million requests daily.</li>
+                <li>Implemented centralized monitoring with EFK Stack, reducing MTTD by 50%.</li>
+            </ul>
+            <h4>Junior DevOps Engineer | Codistan Ventures (April 2023 - April 2024)</h4>
+            <ul>
+                <li>Engineered cloud-based infrastructure on AWS and GCP.</li>
+                <li>Developed CI/CD pipelines, automating workflows by 80%.</li>
+                <li>Orchestrated Kubernetes clusters on AWS EKS, ECS, and EC2.</li>
+            </ul>
+            <h3>Education</h3>
+            <p>Bachelor's in Computer Science, HITEC University Taxila (2018 - 2022)</p>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Cloud Platforms: AWS, Azure, GCP</li>
+                <li>Containerization & Orchestration: Docker, Kubernetes</li>
+                <li>Monitoring & Logging: ELK Stack, Prometheus, CloudWatch</li>
+            </ul>
+        </div>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:saifullah.devops@example.com">saifullah.devops@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/saifullah" target="_blank">github.com/saifullah</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/saifullah" target="_blank">linkedin.com/in/saifullah</a></p>
-  </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: saifullah335566@gmail.com</p>
+            <p>Phone: +92-3349102518</p>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2024 Saifullah. All Rights Reserved.</p>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Saif Ullah. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
