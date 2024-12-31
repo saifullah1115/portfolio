@@ -57,11 +57,18 @@
         <div class="container">
             <h2 class="text-center fw-bold mb-4">About Me</h2>
             <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <!-- <img src="images/my-pic-resume.png" alt="Saif Ullah" class="rounded-circle shadow" style="width: 200px; height: 200px;"> -->
+                <!-- Profile Image -->
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="images/file.png" alt="Saif Ullah" class="img-fluid rounded-circle shadow-lg" style="max-width: 250px; height: auto; border: 5px solid #f1f1f1;">
                 </div>
+                <!-- About Text -->
                 <div class="col-md-8">
-                    <p>I am a Certified DevOps Engineer with expertise in AWS services (including EC2, S3, EKS, RDS, IAM, Lambda), Kubernetes, Docker, and Terraform for automating cloud infrastructure and managing CI/CD pipelines. I am proficient in Jenkins, GitLab CI/CD, and Azure DevOps, enabling seamless automation of workflows and deployments. With hands-on experience in ELK Stack (EFK) for real-time monitoring and centralized logging, I ensure high availability, performance, and security for production-critical applications across both on-prem and cloud environments. I have a proven track record in cloud migrations, deploying secure, scalable solutions, and optimizing infrastructure for efficiency, leveraging load balancing, auto-scaling, and cost optimization techniques.</p>
+                    <p class="lead">
+                        I am a <strong>Certified DevOps Engineer</strong> with expertise in AWS services (including EC2, S3, EKS, RDS, IAM, Lambda), Kubernetes, Docker, and Terraform for automating cloud infrastructure and managing CI/CD pipelines. I am proficient in Jenkins, GitLab CI/CD, and Azure DevOps, enabling seamless automation of workflows and deployments.
+                    </p>
+                    <p class="lead">
+                        With hands-on experience in <strong>ELK Stack (EFK)</strong> for real-time monitoring and centralized logging, I ensure high availability, performance, and security for production-critical applications across both on-prem and cloud environments. I have a proven track record in cloud migrations, deploying secure, scalable solutions, and optimizing infrastructure for efficiency, leveraging load balancing, auto-scaling, and cost optimization techniques.
+                    </p>
                 </div>
             </div>
         </div>
@@ -250,24 +257,19 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-white">
+     <!-- Contact Section -->
+     <section id="contact" class="py-5 bg-dark text-light">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Me</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+            <h2 class="text-center mb-4">Contact</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="lead">You can reach me via email or connect with me on LinkedIn:</p>
+                    <ul>
+                        <li>Email: saif@devops.com</li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/saifullah" class="text-light">linkedin.com/in/saifullah</a></li>
+                    </ul>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -284,5 +286,4 @@
         AOS.init();
     </script>
 </body>
-
 </html>
