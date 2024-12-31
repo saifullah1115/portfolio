@@ -9,6 +9,15 @@ h1, h2 {
 
 .navbar {
     padding: 1rem;
+    background-color: #004085; /* Updated navbar background color */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff !important; /* Updated navbar text color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f1f1f1 !important; /* Updated navbar hover color */
 }
 
 .card {
@@ -22,8 +31,13 @@ h1, h2 {
 }
 
 footer {
+    background-color: #004085; /* Updated footer background color */
+    color: #ffffff; /* Updated footer text color */
     font-size: 0.9rem;
+    padding: 20px;
+    text-align: center;
 }
+
 /* Custom Project Card Styles */
 #projects {
     background-color: #f8f9fa;
